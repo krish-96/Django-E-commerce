@@ -40,6 +40,10 @@ INSTALLED_APPS = [
 
     'home.apps.HomeConfig',
     'product.apps.ProductConfig',
+    'mptt',
+    'order.apps.OrderConfig',
+    'user.apps.UserConfig',
+
 ]
 
 MIDDLEWARE = [

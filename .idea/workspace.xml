@@ -1,7 +1,60 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="975237c5-d30a-47c6-b3fc-4ab1168e3ea8" name="Default Changelist" comment="" />
+    <list default="true" id="975237c5-d30a-47c6-b3fc-4ab1168e3ea8" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/home/forms.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/home/templates/about.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/home/templates/category_products.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/home/templates/contact.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/home/templates/product_detail.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/home/templates/search_products.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/order/forms.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/order/templates/shopcart_products.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/order/urls.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/product/forms.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/uploads/images/41Ot7aHDEL.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/uploads/images/ASUS_ROG_Zephyrus_M_GU502GU-ES003T_1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/uploads/images/LG_65SM8100AUA_Alexa_Built-in_Nano_8_Series_1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/uploads/images/LG_65SM8100AUA_Alexa_Built-in_Nano_8_Series_4.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/uploads/images/LG_65SM8100AUA_Alexa_Built-in_Nano_8_Series_4zJETUQ.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/uploads/images/LG_65SM8100AUA_Alexa_Built-in_Nano_8_Series__3.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/uploads/images/LG_65SM8100AUA_Alexa_Built-in_Nano_8_Series__5.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/uploads/images/LG_65SM8100AUA_Alexa_Built-in_Nano_8_Series_cteE3Dn.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/uploads/images/Razer-Phone-2-featured.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/uploads/images/Women_Brown_Leather_bag.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/uploads/images/Womens_clothes_2.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/uploads/images/android-cell-phone-png-7.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/uploads/images/computer-desktop-pc-png-clip-art.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/uploads/images/dell-desktop-computer1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/uploads/images/headphones.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/uploads/images/images_1_81FHbAV.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/uploads/images/images_2.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/uploads/images/ip-phone-500x500.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/uploads/images/shirt.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/uploads/images/shoes.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/uploads/images/watch.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/user/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/db.sqlite3" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/home/admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/home/admin.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/home/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/home/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/home/templates/base.html" beforeDir="false" afterPath="$PROJECT_DIR$/home/templates/base.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/home/templates/content.html" beforeDir="false" afterPath="$PROJECT_DIR$/home/templates/content.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/home/templates/footer.html" beforeDir="false" afterPath="$PROJECT_DIR$/home/templates/footer.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/home/templates/header.html" beforeDir="false" afterPath="$PROJECT_DIR$/home/templates/header.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/home/templates/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/home/templates/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/home/templates/sidebar.html" beforeDir="false" afterPath="$PROJECT_DIR$/home/templates/sidebar.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/home/templates/slider.html" beforeDir="false" afterPath="$PROJECT_DIR$/home/templates/slider.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/home/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/home/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/home/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/home/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mysite/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/mysite/settings.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mysite/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/mysite/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/product/admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/product/admin.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/product/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/product/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/product/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/product/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/product/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/product/views.py" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -11,10 +64,15 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="HTML File" />
+        <option value="Python Script" />
       </list>
     </option>
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
   <component name="ProjectId" id="1bfk8UE2i7LeLbKPWGc4CvWNmO6" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="autoscrollFromSource" value="true" />
     <option name="hideEmptyMiddlePackages" value="true" />
@@ -24,14 +82,17 @@
   <component name="PropertiesComponent">
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/product" />
-    <property name="settings.editor.selected.configurable" value="editor.preferences.smartKeys" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/user" />
+    <property name="settings.editor.selected.configurable" value="configurable.group.appearance" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="H:\pychrm\mysite\user" />
       <recent name="H:\pychrm\mysite\product" />
+      <recent name="H:\pychrm\mysite\home\templates" />
+      <recent name="H:\pychrm\mysite\static\js" />
       <recent name="H:\pychrm\mysite\static" />
-      <recent name="H:\pychrm\mysite" />
     </key>
   </component>
   <component name="SvnConfiguration">
@@ -48,13 +109,21 @@
     <servers />
   </component>
   <component name="WindowStateProjectService">
-    <state x="186" y="14" key="SettingsEditor" timestamp="1589037849946">
+    <state x="349" y="0" width="856" height="768" key="CommitChangelistDialog2" timestamp="1589704491037">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
-    <state x="186" y="14" key="SettingsEditor/0.0.1366.768@0.0.1366.768" timestamp="1589037849946" />
-    <state x="390" y="209" key="com.intellij.ide.util.TipDialog" timestamp="1589086163614">
+    <state x="349" y="0" width="856" height="768" key="CommitChangelistDialog2/0.0.1366.768@0.0.1366.768" timestamp="1589704491037" />
+    <state x="186" y="14" key="SettingsEditor" timestamp="1589181315603">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
-    <state x="390" y="209" key="com.intellij.ide.util.TipDialog/0.0.1366.768@0.0.1366.768" timestamp="1589086163614" />
+    <state x="186" y="14" key="SettingsEditor/0.0.1366.768@0.0.1366.768" timestamp="1589181315603" />
+    <state x="390" y="209" key="com.intellij.ide.util.TipDialog" timestamp="1589693140514">
+      <screen x="0" y="0" width="1366" height="768" />
+    </state>
+    <state x="390" y="209" key="com.intellij.ide.util.TipDialog/0.0.1366.768@0.0.1366.768" timestamp="1589693140514" />
+    <state x="346" y="89" key="search.everywhere.popup" timestamp="1589437683720">
+      <screen x="0" y="0" width="1366" height="768" />
+    </state>
+    <state x="346" y="89" key="search.everywhere.popup/0.0.1366.768@0.0.1366.768" timestamp="1589437683720" />
   </component>
 </project>

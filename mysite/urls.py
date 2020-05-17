@@ -16,8 +16,22 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path, include
 
+from home.views import category_products, product_detail
+from order.views import shopcart
+
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('home/', include("home.urls")),
+    path('', include("home.urls")),
     path('product/', include("product.urls")),
+    path('order/', include("order.urls")),
+    path('user/', include("user.urls")),
+    path("category/<int:id>/<slug:slug>/", category_products, name='category-products'),
+    path("product/<int:id>/<slug:slug>/", product_detail, name='product-detail'),
+    path("shopcart/", shopcart, name='shopcart'),
 ]
+
+from django.conf import  settings
+from django.conf.urls.static import static
+
+if settings.DEBUG:
+    urlpatterns += static(settings.MEDIA_URL, document_root = settings.MEDIA_ROOT)

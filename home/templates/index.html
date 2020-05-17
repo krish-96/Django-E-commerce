@@ -1,8 +1,9 @@
 {% extends 'base.html' %}
 {% load static %}
-{% block title %} My Home Page Title {% endblock %}
-{% block keywords %} My Home Keywords {% endblock %}
-{% block description %} My Home description {% endblock %}
+
+{% block title %} {{ setting.title | title}} {% endblock %}
+{% block keywords %} {{ setting.keywords }} {% endblock %}
+{% block description %} {{ setting.description }} {% endblock %}
 
 {% block sidebar %} {% include 'sidebar.html' %} {% endblock %}
 {% block slider %} {% include 'slider.html' %} {% endblock %}
