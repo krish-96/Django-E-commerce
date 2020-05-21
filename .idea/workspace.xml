@@ -1,7 +1,44 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="975237c5-d30a-47c6-b3fc-4ab1168e3ea8" name="Default Changelist" comment="" />
+    <list default="true" id="975237c5-d30a-47c6-b3fc-4ab1168e3ea8" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/home/templates/faq.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/order/templates/order_completed.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/order/templates/order_form.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/user/forms.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/user/templates/login_form.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/user/templates/signup_form.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/user/templates/user_comments.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/user/templates/user_order_detail.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/user/templates/user_order_products.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/user/templates/user_orders.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/user/templates/user_panel.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/user/templates/user_password.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/user/templates/user_profile.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/user/templates/user_update.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/db.sqlite3" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/home/admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/home/admin.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/home/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/home/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/home/templates/base.html" beforeDir="false" afterPath="$PROJECT_DIR$/home/templates/base.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/home/templates/category_products.html" beforeDir="false" afterPath="$PROJECT_DIR$/home/templates/category_products.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/home/templates/content.html" beforeDir="false" afterPath="$PROJECT_DIR$/home/templates/content.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/home/templates/footer.html" beforeDir="false" afterPath="$PROJECT_DIR$/home/templates/footer.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/home/templates/header.html" beforeDir="false" afterPath="$PROJECT_DIR$/home/templates/header.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/home/templates/product_detail.html" beforeDir="false" afterPath="$PROJECT_DIR$/home/templates/product_detail.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/home/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/home/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/home/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/home/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mysite/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/mysite/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/order/admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/order/admin.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/order/forms.py" beforeDir="false" afterPath="$PROJECT_DIR$/order/forms.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/order/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/order/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/order/templates/shopcart_products.html" beforeDir="false" afterPath="$PROJECT_DIR$/order/templates/shopcart_products.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/order/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/order/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/order/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/order/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/product/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/product/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/user/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/user/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/user/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/user/views.py" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -10,8 +47,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="HTML File" />
         <option value="Python Script" />
+        <option value="HTML File" />
       </list>
     </option>
   </component>
@@ -30,16 +67,16 @@
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/user" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/home/templates" />
     <property name="settings.editor.selected.configurable" value="settings.github" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="H:\pychrm\mysite\user" />
-      <recent name="H:\pychrm\mysite\product" />
       <recent name="H:\pychrm\mysite\home\templates" />
-      <recent name="H:\pychrm\mysite\static\js" />
+      <recent name="H:\pychrm\mysite\user\templates" />
+      <recent name="H:\pychrm\mysite\order\templates" />
       <recent name="H:\pychrm\mysite\static" />
+      <recent name="H:\pychrm\mysite\static\css" />
     </key>
   </component>
   <component name="SvnConfiguration">
@@ -67,7 +104,14 @@
       <option name="project" value="LOCAL" />
       <updated>1589704622645</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="User Profile Information Creation done.">
+      <created>1589704775052</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1589704775053</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -75,18 +119,30 @@
     <option name="LAST_COMMIT_MESSAGE" value="User Profile Information Creation done." />
   </component>
   <component name="WindowStateProjectService">
-    <state x="349" y="0" width="856" height="768" key="CommitChangelistDialog2" timestamp="1589704619470">
+    <state x="275" y="43" key="#Notifications" timestamp="1589704802077">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
-    <state x="349" y="0" width="856" height="768" key="CommitChangelistDialog2/0.0.1366.768@0.0.1366.768" timestamp="1589704619470" />
+    <state x="275" y="43" key="#Notifications/0.0.1366.768@0.0.1366.768" timestamp="1589704802077" />
+    <state x="137" y="40" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1589707290803">
+      <screen x="0" y="0" width="1366" height="768" />
+    </state>
+    <state x="137" y="40" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1366.768@0.0.1366.768" timestamp="1589707290803" />
+    <state x="349" y="0" width="856" height="768" key="CommitChangelistDialog2" timestamp="1589704773628">
+      <screen x="0" y="0" width="1366" height="768" />
+    </state>
+    <state x="349" y="0" width="856" height="768" key="CommitChangelistDialog2/0.0.1366.768@0.0.1366.768" timestamp="1589704773628" />
     <state x="186" y="14" key="SettingsEditor" timestamp="1589704741781">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
     <state x="186" y="14" key="SettingsEditor/0.0.1366.768@0.0.1366.768" timestamp="1589704741781" />
-    <state x="390" y="209" key="com.intellij.ide.util.TipDialog" timestamp="1589693140514">
+    <state x="275" y="118" key="Vcs.Push.Dialog.v2" timestamp="1589704861240">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
-    <state x="390" y="209" key="com.intellij.ide.util.TipDialog/0.0.1366.768@0.0.1366.768" timestamp="1589693140514" />
+    <state x="275" y="118" key="Vcs.Push.Dialog.v2/0.0.1366.768@0.0.1366.768" timestamp="1589704861240" />
+    <state x="390" y="209" key="com.intellij.ide.util.TipDialog" timestamp="1590032981547">
+      <screen x="0" y="0" width="1366" height="768" />
+    </state>
+    <state x="390" y="209" key="com.intellij.ide.util.TipDialog/0.0.1366.768@0.0.1366.768" timestamp="1590032981547" />
     <state x="346" y="89" key="search.everywhere.popup" timestamp="1589437683720">
       <screen x="0" y="0" width="1366" height="768" />
     </state>

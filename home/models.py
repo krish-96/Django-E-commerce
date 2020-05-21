@@ -42,13 +42,28 @@ class ContactMessage(models.Model):
     }
     name = models.CharField(blank=True, max_length=20)
     email = models.EmailField(blank=True, max_length=50)
-    subject = models.EmailField(blank=True, max_length=50)
-    message = models.EmailField(blank=True, max_length=255)
-    status = models.EmailField(max_length=10, choices=STATUS, default='New')
-    ip = models.EmailField(max_length=20, blank=True)
+    subject = models.CharField(blank=True, max_length=50)
+    message = models.TextField(blank=True, max_length=255)
+    status = models.CharField(max_length=10, choices=STATUS, default='New')
+    ip = models.CharField(max_length=20, blank=True)
     note = models.CharField(blank=True, max_length=100)
     create_at = models.DateTimeField(auto_now_add=True)
     update_at = models.DateTimeField(auto_now=True)
 
     def __str__(self):
         return self.name
+
+class FAQ(models.Model):
+    STATUS = {
+        ('True','True'),
+        ('False','False'),
+    }
+    ordernumber = models.IntegerField()
+    question = models.CharField(max_length=200)
+    answer = models.TextField()
+    status = models.CharField(max_length=10, choices=STATUS)
+    create_at = models.DateTimeField(auto_now_add=True)
+    update_at = models.DateTimeField(auto_now=True)
+
+    def __str__(self):
+        return self.question

@@ -1,0 +1,54 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block title %} Order Completed {% endblock %}
+{% block keywords %} {{ setting.keywords }} {% endblock %}
+{% block description %} {{ setting.description }} {% endblock %}
+
+{% block sidebar %} {% include 'sidebar.html' %} {% endblock %}
+
+{% block body %}
+
+<!-- BREADCRUMB -->
+<div id="breadcrumb">
+    <div class="container">
+        <ul class="breadcrumb">
+            <li><a href="#">Home</a></li>
+            <li class="active">Order Completed</li>
+        </ul>
+    </div>
+</div>
+<!-- /BREADCRUMB -->
+
+<!-- section -->
+<div class="section">
+    <!-- container -->
+    <div class="container">
+        <!-- row -->
+        <div class="row">
+
+
+            <div class="col-md-12">
+                <div class="order-summary clearfix">
+                    <div class="section-title">
+                        <h3 class="title">Order Completed</h3>
+                    </div>
+                    <hr>
+                    <h3>Dear {{ user.first_name }} {{ user.last_name }}</h3>
+                    <hr>
+                    <h4>Your order is completed</h4>
+                    <h4>Order Code : {{ ordercode }} </h4>
+                    <h4>Thank You</h4>
+                    <hr>
+
+                </div>
+            </div>
+
+        </div>
+        <!-- /row -->
+    </div>
+    <!-- /container -->
+</div>
+<!-- /section -->
+
+{% endblock %}
+{% block foot %} {% include 'footer.html' %} {% endblock %}

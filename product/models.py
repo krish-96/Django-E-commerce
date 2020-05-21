@@ -2,6 +2,7 @@ from django.contrib.auth.models import User
 from django.db import models
 import os
 from django.conf import settings
+from django.db.models import Avg, Count
 from django.urls import reverse
 from django.utils.safestring import mark_safe
 
@@ -77,6 +78,20 @@ class Product(models.Model):
 
     def get_absolute_url(self):
         return reverse('category-products',kwargs={'slug':self.slug})
+
+    def averagereview(self):
+        reviews = Comment.objects.filter(product=self, status='True').aggregate(average=Avg('rate'))
+        avg=0
+        if reviews['average'] is not None:
+            avg = float(reviews['average'])
+        return avg
+
+    def countreview(self):
+        reviews = Comment.objects.filter(product=self, status='True').aggregate(count=Count('rate'))
+        cnt=0
+        if reviews['count'] is not None:
+            cnt = int(reviews['count'])
+        return cnt
 
 class Images(models.Model):
     product = models.ForeignKey(Product, on_delete=models.CASCADE)

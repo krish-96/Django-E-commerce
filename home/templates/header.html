@@ -9,8 +9,8 @@
                 <span>Welcome to E-shop!</span>
                 {% if messages %}
                 {% for message in messages %}
-                <div class="alert alert-{{message.tags}}" role="alert">
-                    {{message}}
+                <div class="alert alert-{{message.tags}}" role="alert" >
+                    {{message | safe }}
                 </div>
                 {% endfor %}
                 {% endif %}
@@ -19,7 +19,7 @@
                 <ul class="header-top-links">
                     <li><a href="#">Store</a></li>
                     <li><a href="#">Newsletter</a></li>
-                    <li><a href="#">FAQ</a></li>
+                    <li><a href="/faq">FAQ</a></li>
                     <li class="dropdown default-dropdown">
                         <a class="dropdown-toggle" data-toggle="dropdown" aria-expanded="true">ENG <i
                                 class="fa fa-caret-down"></i></a>
@@ -71,6 +71,7 @@
                         var selectedObj = ui.item;
                     }
 
+
                 </script>
 
                 <!-- Search -->
@@ -100,34 +101,38 @@
                 <ul class="header-btns">
                     <!-- Account -->
                     <li class="header-account dropdown default-dropdown">
+                        {% if user.id is not None %}
                         <div class="dropdown-toggle" role="button" data-toggle="dropdown" aria-expanded="true">
                             <div class="header-btns-icon">
-                                <i class="fa fa-user-o"></i>
+                                <img src="{{ request.session.userimage }}" style="height:40px; border-radius:30%;">
                             </div>
-                            <strong class="text-uppercase">My Account <i class="fa fa-caret-down"></i></strong>
+                            <strong class="text-uppercase">{{ user.first_name }} <i class="fa fa-caret-down"></i></strong>
                         </div>
-                        <a href="#" class="text-uppercase">Login</a> / <a href="#" class="text-uppercase">Join</a>
+                        {% else %}
+                        <a href="/login" class="text-uppercase"> <i class="fa fa-unlock-alt"></i> Login</a>
+                        /
+                        <a href="/signup" class="text-uppercase"> <i class="fa fa-user-plus"></i>  Sign Up</a>
+                        {% endif %}
                         <ul class="custom-menu">
-                            <li><a href="#"><i class="fa fa-user-o"></i> My Account</a></li>
-                            <li><a href="#"><i class="fa fa-heart-o"></i> My Wishlist</a></li>
-                            <li><a href="#"><i class="fa fa-exchange"></i> Compare</a></li>
-                            <li><a href="#"><i class="fa fa-check"></i> Checkout</a></li>
-                            <li><a href="#"><i class="fa fa-unlock-alt"></i> Login</a></li>
-                            <li><a href="#"><i class="fa fa-user-plus"></i> Create An Account</a></li>
+                            <li><a href="/user"><i class="fa fa-user-o"></i> My Account</a></li>
+                            <li><a href="/user/favourite"><i class="fa fa-heart-o"></i> My Favourites</a></li>
+                            <li><a href="/user/orders"><i class="fa fa-exchange"></i> My Orders</a></li>
+                            <li><a href="/user/comments"><i class="fa fa-check"></i> My Comments</a></li>
+                            <li><a href="/logout"><i class="fa fa-lock"></i> LogOut</a></li>
                         </ul>
                     </li>
                     <!-- /Account -->
 
                     <!-- Cart -->
                     <li class="header-cart dropdown default-dropdown">
-                        <a href="/shopcart/" >
+                        <a href="/shopcart/">
                             <div class="header-btns-icon">
                                 <i class="fa fa-shopping-cart"></i>
                                 <span class="qty">3</span>
                             </div>
                             <strong class="text-uppercase">My Cart:</strong>
                             <br>
-                            <span>35.20$</span>
+                            <span>{{ total }}$</span>
                         </a>
 
                     </li>

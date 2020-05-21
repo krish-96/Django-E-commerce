@@ -6,7 +6,8 @@ from django.shortcuts import render
 
 from product.models import Category, Product, Images, Comment
 from .forms import ContactForm, SearchForm
-from .models import Setting, ContactMessage
+from .models import Setting, ContactMessage, FAQ
+
 
 # Create your views here.
 def index(request):
@@ -60,7 +61,7 @@ def contactus(request):
             print("form is valid!")
             form.save()
             messages.success(request, "Your message has been sent. Thankyou for your message.")
-            return HttpResponseRedirect('contact-us/')
+            return HttpResponseRedirect('/contact-us')
         else:
             messages.error(request, "Please correct the below errors!")
     setting = Setting.objects.get(pk=1)
@@ -116,7 +117,6 @@ def search_auto(request):
   mimetype = 'application/json'
   return HttpResponse(data, mimetype)
 
-
 def product_detail(request,id,slug):
     category = Category.objects.all()
     product = Product.objects.get(pk=id)
@@ -130,3 +130,12 @@ def product_detail(request,id,slug):
         'comments': comments,
     }
     return render(request, 'product_detail.html', context)
+
+def faq(request):
+    category = Category.objects.all()
+    faq = FAQ.objects.filter(status='True').order_by('ordernumber')
+    context = {
+        'category': category,
+        'faq': faq,
+    }
+    return render(request, 'faq.html', context)

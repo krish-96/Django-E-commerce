@@ -66,13 +66,15 @@
                         </h3>
                         <div>
                             <div class="product-rating">
-                                <i class="fa fa-star"></i>
-                                <i class="fa fa-star"></i>
-                                <i class="fa fa-star"></i>
-                                <i class="fa fa-star"></i>
-                                <i class="fa fa-star-o empty"></i>
+                                <i class="fa fa-star{% if product.averageview < 1 %}-o empty {% endif %}"></i>
+                                <i class="fa fa-star{% if product.averagereview < 2 %}-o empty {% endif %}"></i>
+                                <i class="fa fa-star{% if product.averagereview < 3 %}-o empty {% endif %}"></i>
+                                <i class="fa fa-star{% if product.averagereview < 4 %}-o empty {% endif %}"></i>
+                                <i class="fa fa-star{% if product.averagereview < 5 %}-o empty {% endif %}"></i>
+
+                                {{ product.averagereview | stringformat:"0.2f" }}
                             </div>
-                            <a href="#">3 Review(s) / Add Review</a>
+                            <a href="#tab1">{{product.countreview }} Review(s) / Add Review</a>
                         </div>
                         <p><strong>Availability:</strong> In Stock</p>
                         <p><strong>Brand:</strong> E-SHOP</p>
@@ -98,9 +100,11 @@
                                 {% csrf_token %}
                                 <div class="qty-input">
                                     <span class="text-uppercase">QTY: </span>
-                                    <input class="input" name="quantity" type="number" value="1" min="1" max="{{ product.amount }}">
+                                    <input class="input" name="quantity" type="number" value="1" min="1"
+                                           max="{{ product.amount }}">
                                 </div>
-                                <button type="submit" class="primary-btn add-to-cart"><i class="fa fa-shopping-cart"></i> Add to Cart
+                                <button type="submit" class="primary-btn add-to-cart"><i
+                                        class="fa fa-shopping-cart"></i> Add to Cart
                                 </button>
                             </form>
                             <div class="pull-right">
@@ -115,7 +119,7 @@
                     <div class="product-tab">
                         <ul class="tab-nav">
                             <li class="active"><a data-toggle="tab" href="#tab1">Details</a></li>
-                            <li><a data-toggle="tab" href="#tab2">Reviews (3)</a></li>
+                            <li><a data-toggle="tab" href="#tab2">Reviews ({{ product.countreview }})</a></li>
                         </ul>
                         <div class="tab-content">
                             <div id="tab1" class="tab-pane fade in active">
@@ -133,7 +137,8 @@
                                                     <div><a href="#"><i class="fa fa-user-o"></i> {{ rs.user.username }}</a>
                                                     </div>
                                                     <div><a href="#"><b>{{ rs.subject }}</b> </a></div>
-                                                    <div><a href="#"><i class="fa fa-clock-o"></i> {{ rs.create_at }}</a>
+                                                    <div><a href="#"><i class="fa fa-clock-o"></i> {{ rs.create_at
+                                                        }}</a>
                                                     </div>
                                                     <div class="review-rating pull-right">
                                                         <i class="fa fa-star{% if rs.rate < 1 %}-o empty {% endif %}"></i>
